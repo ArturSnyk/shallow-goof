@@ -11,7 +11,13 @@
   "dependencies": {
     "git-url-parse": "^11.1.2",
     "node-uuid": "1.4.0",
-    "npm": "^6.9.0",
-    "qs": "0.0.6"
-  }
+    "npm": "^6.14.6",
+    "qs": "0.0.6",
+    "snyk": "^1.369.3"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
