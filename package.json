@@ -10,8 +10,14 @@
   "license": "MIT",
   "dependencies": {
     "git-url-parse": "^11.1.2",
-    "node-uuid": "1.4.0",
-    "npm": "^6.9.0",
-    "qs": "0.0.6"
-  }
+    "node-uuid": "1.4.6",
+    "npm": "^6.14.6",
+    "qs": "6.0.4",
+    "snyk": "^1.437.3"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
